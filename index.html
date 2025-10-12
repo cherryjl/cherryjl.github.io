@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="John Logan Cherry">
   <title>My Portfolio</title>
+  <script>
+    if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+  </script>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/appearanceToggle.js" defer></script>
 
@@ -13,8 +18,8 @@
 
 <body>
   <header aria-label="Header">
-    <h1>John Logan Cherry | IT/CS Student</h1>
-    <nav>
+    <h1 class="title">John Logan Cherry | IT/CS Student</h1>
+    <nav class="navBar">
       <ul>
         <li><a href="professional/about.html">About Me</a></li>
         <li><a href="professional/resume.html">Resume</a></li>
@@ -38,7 +43,7 @@
     </section>
   </main>
 
-  <footer aria-label="Footer">
+  <footer class="footer" aria-label="Footer">
     <p>&copy; 2025 by Logan Cherry</p>
     <a href="professional/contact.html">Contact Me</a>
   </footer>

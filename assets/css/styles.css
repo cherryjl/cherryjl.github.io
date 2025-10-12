@@ -6,13 +6,27 @@
   --text-dark: #e0e0e0;
 }
 
+html,
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--bg-light);
   color: var(--text-light);
   margin: 0;
-  padding: 2rem;
+  padding: 0px;
   transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+main {
+  padding: 10px;
 }
 
 h1,
@@ -21,14 +35,44 @@ h3 {
   color: var(--accent);
 }
 
+.title {
+  padding-left: 5%;
+}
+
+.navBar {
+  padding-right: 5%;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: baseline;
+  z-index: 10;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 nav ul {
+  display: flex;
+  gap: 10px;
   list-style: none;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 nav li {
   margin: 0.5rem 0;
 }
+
+/* Links */
 
 a {
   color: var(--accent);
@@ -39,20 +83,14 @@ a:hover {
   text-decoration: underline;
 }
 
-header,
-main {
-  max-width: 800px;
-  margin: auto;
-}
-
 /* Light/Dark mode */
 
-.dark-mode {
+html.dark-mode body {
   background-color: var(--bg-dark);
   color: var(--text-dark);
 }
 
-.dark-mode a {
+html.dark-mode a {
   color: #ff4f4f;
 }
 
@@ -67,4 +105,17 @@ main {
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  border-top: 2px solid;
+  padding: 0px;
+  width: 100%;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  gap: 20px;
 }
