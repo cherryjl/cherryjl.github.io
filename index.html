@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>John Logan Cherry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="John Logan Cherry">
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <header>
-    <h1>John Logan Cherry | IT/CS Student</h1>
-    <p><em>"Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present."</em></p>
-  </header>
+  <script src="assets/js/appearanceToggle.js" defer></script>
 
-  <main>
-    <p>Welcome to my website! You’ll find my resume, achievements, and contact info here.</p>
+</head>
+
+<body>
+  <header aria-label="Header">
+    <h1>John Logan Cherry | IT/CS Student</h1>
     <nav>
       <ul>
         <li><a href="professional/about.html">About Me</a></li>
         <li><a href="professional/resume.html">Resume</a></li>
-        <li><a href="professional/contact.html">Contact</a></li>
+        <li><a href="professional/achievements.html">Achievements</a></li>
+        <li><a href="professional/projects.html">Projects</a></li>
       </ul>
+      <button id="theme-toggle">Toggle Dark Mode</button>
     </nav>
+  </header>
+
+  <main aria-label="Main">
+    <p>Welcome to my website! You’ll find my resume, achievements, and contact info here.</p>
+    <p>I wanted to make a website to showcase everything I learned in my IT/CS classes.</p>
+    <p>If for some reason you found this website without knowing about my github page, here is the link to the
+      repository: <a href="https://cherryjl.github.io/">https://cherryjl.github.io/</a>.</p>
+    <section>
+      <!-- <div>
+        <h3>My Skills:</h3>
+        <p>Placeholder</p>
+      </div> -->
+    </section>
   </main>
+
+  <footer aria-label="Footer">
+    <p>&copy; 2025 by Logan Cherry</p>
+    <a href="professional/contact.html">Contact Me</a>
+  </footer>
+
 </body>
+
 </html>

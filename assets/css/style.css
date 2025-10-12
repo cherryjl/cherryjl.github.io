@@ -15,7 +15,9 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--accent);
 }
 
@@ -37,7 +39,8 @@ a:hover {
   text-decoration: underline;
 }
 
-header, main {
+header,
+main {
   max-width: 800px;
   margin: auto;
 }
