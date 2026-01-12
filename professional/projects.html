@@ -12,7 +12,7 @@
         }
     </script>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <script src="../assets/js/appearanceToggle.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/projects.css">
 </head>
 
 <body>
@@ -29,15 +29,56 @@
         </nav>
     </header>
     <main aria-label="Main">
-        <section>
-            <h2>Conversion Reference Website</h2>
-            <a href="https://cherryjl.github.io/Static-Website-Unit-Conversions/">My unit conversion website</a>
+        <section id="left">
+            <section>
+                <h2>Unit Converter Website</h2>
+                <ul id="website-description">
+                    <li>Developed a client-side category-based unit conversion website using HTML, CSS, and JS.</li>
+                    <li>Features real-time math and event triggers, a persistent UI state, a responsive layout,
+                        compliant
+                        accessibility practices, localStorage, and PWA support.</li>
+                </ul>
+                <a href="https://cherryjl.github.io/Static-Website-Unit-Conversions/">Link</a>
+            </section>
+            <section>
+                <h2>NextUp-Sports Website</h2>
+                <p>Developed a client-side all-in-one sports calendar application using HTML, CSS, and JS featuring
+                    REST APIs, persistent user settings (localStorage), and event-driven dynamic filtering.</p>
+                <a href="https://github.com/cherryjl/NextUp-Sports">Link</a>
+            </section>
+            <section id="photo-gallery">
+                <h2>Photo Gallery</h2>
+                <a href="https://photos.app.goo.gl/zVt9nTbcKs8Ef7Hv5">My best photos</a>
+                <section class="gallery-grid">
+                    <img src="../assets/images/Eye of the Tiger.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Rocks.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Meadow of Fireflies.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Glacier.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Valley.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Falls.JPG" loading="lazy" decoding="async">
+                    <img src="../assets/images/Flashlight.PNG" loading="lazy" decoding="async">
+                    <img src="../assets/images/Coffee.jpg" loading="lazy" decoding="async">
+                    <img src="../assets/images/Atop.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Circle.jpg" loading="lazy" decoding="async">
+                    <img src="../assets/images/Cruise.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Eiffel.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Falls.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Flag.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Large-Falls.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Mountain.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Oval.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Pink.jpg" loading="lazy" decoding="async">
+                    <img src="../assets/images/Pi.JPG" loading="lazy" decoding="async">
+                    <img src="../assets/images/River.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Rocks.png" loading="lazy" decoding="async">
+                    <img src="../assets/images/Car.png" loading="lazy" decoding="async">
+
+
+                    <!-- Add the rest of the photos -->
+                </section>
+            </section>
         </section>
-        <section>
-            <h2>Photo Gallery</h2>
-            <a href="https://photos.app.goo.gl/zVt9nTbcKs8Ef7Hv5">My best photos</a>
-            <!-- <a href="">My photography Instagram</a> -->
-        </section>
+        <section id="right"></section>
     </main>
 
     <footer class="footer" aria-label="Footer">
@@ -45,6 +86,14 @@
         <a href="contact.html">Contact Me</a>
     </footer>
 
+    <div id="image-modal" class="modal" aria-hidden="true">
+        <span class="modal-close" aria-label="Close image">&times;</span>
+        <img class="modal-content" id="modal-image" alt="">
+    </div>
+
+    <script src="../assets/js/appearanceToggle.js" defer></script>
+    <script src="../assets/js/randomizeGallery.js" defer></script>
+    <script src="../assets/js/galleryModal.js" defer></script>
 </body>
 
 </html>

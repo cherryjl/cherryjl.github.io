@@ -6,6 +6,10 @@
   --text-dark: #e0e0e0;
 }
 
+html {
+  background-color: var(--bg-light);
+}
+
 html,
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -21,8 +25,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   overflow: auto;
+  background-color: var(--bg-light);
 }
 
 main {
@@ -31,9 +35,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 100%;
-  flex: 1;
-  justify-content: center; */
 }
 
 h1,
@@ -55,8 +56,9 @@ header {
   width: 100%;
   gap: 20px;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   z-index: 10;
+  border-bottom: 1px solid #707070;
 }
 
 /* Navigation */
@@ -71,12 +73,13 @@ nav ul {
   display: flex;
   gap: 10px;
   list-style: none;
-  padding: 0;
+  padding: 0px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 nav li {
-  margin: 0.5rem 0;
+  margin: 0;
 }
 
 /* Links */
@@ -91,6 +94,10 @@ a:hover {
 }
 
 /* Light/Dark mode */
+
+html.dark-mode {
+  background-color: var(--bg-dark);
+}
 
 html.dark-mode body {
   background-color: var(--bg-dark);
