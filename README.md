@@ -20,17 +20,11 @@ This site is structured to highlight my professional profile:
 
 This site is built using:
 
-- **HTML5** and **CSS3** for structure and styling
+- **HTML** and **CSS** for structure and styling
 - **JavaScript** for interactivity
 - **Responsive design** for mobile and desktop viewing
 - **GitHub Pages** for hosting
-
-## How to Use
-
-- View the site live at [https://cherryjl.github.io](https://cherryjl.github.io)
-- Navigate through the menu to explore my professional information and projects.
-- Contact me through the links provided on the site if you’d like to connect.
-
+  
 ## License
 
 Content on this site is © Logan Cherry. Feel free to view and explore, but do not copy or redistribute without permission.
